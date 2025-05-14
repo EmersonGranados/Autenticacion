@@ -4,9 +4,11 @@ using Autenticacion.Model;
 using Microsoft.Identity.Client.Platforms.Features.DesktopOs;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Autenticacion.Pages.Account
 {
+    [Authorize]
     public class LoginModel : PageModel
     {
         [BindProperty]
